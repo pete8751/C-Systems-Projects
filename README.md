@@ -49,7 +49,6 @@ No pairing found for n=9.
 - **Description:**
 Welcome to Simple Street Map (SSM), my terminal-based street map application! With SSM, you can navigate through simplified street maps in Toronto using a convenient command-line interface. I developed this project to enhance my skills in C programming, particularly focusing on structures, arrays, and dynamic memory allocation. I use the A star algorithm to find the quickest path between two points in the city.
 
-Background
 OpenStreetMap (OSM) is an open-source mapping platform that empowers users to contribute, edit, and access geospatial data freely. It provides detailed and up-to-date maps, covering various geographical features like roads, buildings, rivers, and points of interest. However, given the complexity of OSM, I've distilled its functionality in SSM to focus solely on navigating a motor vehicle within a simplified map area.
 
 This interactive tool that behaves like a terminal-based database client. It starts by loading a map file, and upon success, it enters a shell session where you can use various commands such as 'node', 'way', 'find', 'path', and 'quit'.
@@ -117,7 +116,7 @@ and then start using it like you would your native shell!
 
 - **Directory:** [Project 3](Projects/A1)
 
-- ### 4. Project 4: Network Programming
+### 4. Project 4: Network Programming
 
   **Description:** Project 4 involves network programming in C, with an emphasis on socket programming, TCP/IP protocols, and client-server architecture. It includes implementations of various network applications such as chat servers, file transfer utilities, and network monitoring tools.
 
