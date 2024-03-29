@@ -17,15 +17,18 @@ The tool has two modes:
 Check Mode: Verify if a sequence is a valid Langford pairing.
 Create Mode: Generate a Langford pairing.
 
-$ ./langford 2 10 1 2 1 9 12 14 11 7 15 16 10 13 3 9 6 7 3 12 11 8 14 6 4 5 15 13 16 4 8 5
-It's a Langford pairing!
+Example Usage:
 
 Check Mode:
 Check a sequence as a Langford pairing:
 
+$ ./langford 2 10 1 2 1 9 12 14 11 7 15 16 10 13 3 9 6 7 3 12 11 8 14 6 4 5 15 13 16 4 8 5
+It's a Langford pairing!
+
 $ ./langford 8 4 1 2 6 11 9 6 5 9 5 11 7 3 8 10 4 3 1 7 10 2
 Not a Langford pairing.
 
+Create Mode:
 Generate a Langford pairing for n:
 
 $ ./langford -c 16
