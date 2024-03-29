@@ -9,7 +9,6 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 - **Description:** 
 Welcome to the Langford Pairing Command Line Tool! This tool allows you to work with Langford pairings, arranging numbers in a sequence with specific distances between identical pairs.
 
-Background
 A Langford pairing arranges numbers such that each identical pair has a distance equal to its value.
 
 The tool has two modes:
