@@ -8,19 +8,19 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 
 - **Description:** Project A is a real-time data processing system implemented in C. It involves efficient algorithms for processing streaming data and generating insights in real-time. It's designed to handle large volumes of data with minimal latency.
 
-- **Directory:** [Project A](./project_a)
+- **Directory:** [Project 1](Projects/A1)
 
 ### 2. Project B: Embedded Systems Development
 
 - **Description:** Project B focuses on embedded systems development using C programming language. It includes firmware development for microcontrollers, sensor interfacing, and communication protocols implementation. The project emphasizes low-level programming and hardware-software interaction.
 
-- **Directory:** [Project B](./project_b)
+- **Directory:** [Project 2](Projects/A1)
 
 ### 3. Project C: Network Programming
 
 - **Description:** Project C involves network programming in C, with an emphasis on socket programming, TCP/IP protocols, and client-server architecture. It includes implementations of various network applications such as chat servers, file transfer utilities, and network monitoring tools.
 
-- **Directory:** [Project C](./project_c)
+- **Directory:** [Project 3](Projects/A1)
 
 ## Getting Started
 
