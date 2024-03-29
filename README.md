@@ -34,9 +34,11 @@ Not a Langford pairing.
 Generate a Langford pairing for n:
 
 $ ./langford -c 16
+
 Langford pairing for n=16: [2, 10, 1, 2, 1, 9, 12, 14, 11, 7, 15, 16, 10, 13, 3, 9, 6, 7, 3, 12, 11, 8, 14, 6, 4, 5, 15, 13, 16, 4, 8, 5]
 
 $ ./langford -c 9
+
 No pairing found for n=9.
 
 
