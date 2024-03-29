@@ -26,10 +26,7 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 
 To explore any of the projects, simply navigate to the respective directory linked above. Each project directory contains detailed documentation, source code, and instructions for building and running the projects.
 
-## Contributions
+## Future:
 
-Contributions, suggestions, and feedback are welcome! If you'd like to contribute to any of the projects or report issues, feel free to open an issue or submit a pull request.
+A4 is soon to come, and I'm currently working on optimizing A3 
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
