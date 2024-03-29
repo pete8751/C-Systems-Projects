@@ -66,36 +66,36 @@ Lastly, 'quit' gracefully exits the program.
 
 Example usage:
 
-# Load map file
+### Load map file
 $ ./ssmap maps/uoft.txt
 maps/uoft.txt successfully loaded. 1924 nodes, 410 ways.
 >>
 
-# 'node' command
+### 'node' command
 >> node 1
 Node 1: (43.6675534, -79.3997042)
 
-# 'way' command
+### 'way' command
 >> way 1
 Way 1: Queen's Park Crescent West
 
-# 'find way' command
+### 'find way' command
 >> find way Bloor
 0 147 148 149 205 206 207 264 282 290 291 292 334 335 351 352 353 386
 
-# 'find node' command
+### 'find node' command
 >> find node Bloor
 0 1 2 175 290 465 511 652 867 895 980 981 982 983 984 985 986 1052 1168 1209 1210 1211 1212 1213 1214 1215 1317 1363 1479 1480 1513 1550 1551 1552 1553 1554 1555 1556 1703 1704 1705 1744 1745 1854
 
-# 'path time' command
+### 'path time' command
 >> path time 199 200 201 202
 0.1201 minutes
 
-# 'path create' command
+### 'path create' command
 >> path create 199 186
 199 200 201 202 666 667 668 186
 
-# 'quit' command
+### 'quit' command
 >> quit
 
 
@@ -114,15 +114,14 @@ This involved a lot of C-string parsing, file I/O, and standard usage of fork, e
 To run it, simply use the command ./cscshell -i ./cscshell_init
 and then start using it like you would your native shell!
 
-- 
 
 - **Directory:** [Project 3](Projects/A1)
 
 - ### 4. Project 4: Network Programming
 
-- **Description:** Project 4 involves network programming in C, with an emphasis on socket programming, TCP/IP protocols, and client-server architecture. It includes implementations of various network applications such as chat servers, file transfer utilities, and network monitoring tools.
+  **Description:** Project 4 involves network programming in C, with an emphasis on socket programming, TCP/IP protocols, and client-server architecture. It includes implementations of various network applications such as chat servers, file transfer utilities, and network monitoring tools.
 
-- 
+  
 
 - **Directory:** COMING SOON
 
