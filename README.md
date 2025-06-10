@@ -43,7 +43,7 @@ No pairing found for n=9.
 
 - **Directory:** [Project 1](Projects/A1)
 
-### 2. Project B: Embedded Systems Development
+### 2. Project B: Terminal GIS application
 
 - **Description:**
 Welcome to Simple Street Map (SSM), my terminal-based street map application! With SSM, you can navigate through simplified street maps in Toronto using a convenient command-line interface. I developed this project to enhance my skills in C programming, particularly focusing on structures, arrays, and dynamic memory allocation. I use the A star algorithm to find the quickest path between two points in the city.
@@ -97,9 +97,9 @@ Way 1: Queen's Park Crescent West
 >> quit
 
 
-- **Directory:** [Project 2](Projects/A1)
+- **Directory:** [Project 2](Projects/A2)
 
-### 3. Project C: Network Programming
+### 3. Project C: Custom Shell
 
 - **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
 
@@ -113,15 +113,31 @@ To run it, simply use the command ./cscshell -i ./cscshell_init
 and then start using it like you would your native shell!
 
 
-- **Directory:** [Project 3](Projects/A1)
+- **Directory:** [Project 3](Projects/A3)
 
 ### 4. Project 4: Network Programming
 
-  **Description:** Project 4 involves network programming in C, with an emphasis on socket programming, TCP/IP protocols, and client-server architecture. It includes implementations of various network applications such as chat servers, file transfer utilities, and network monitoring tools.
+  **Description:** Routing Packets in a Simplified Software Router (C++)
+
+Overview: Created a fully functioning a fully functional, simplified IPv4 router.
+
+Key Features:
+
+Dynamic Route Installation: Implemented Router::add_route() to insert new routing entries (prefix, mask length, optional next-hop, and output interface) into a custom routing table.
+
+Longest-Prefix Matching: In Router::route(), iterated incoming packets across all interfaces, performed a binary search over stored prefixes to find the best (longest) matching route for each destination IP.
+
+TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropped packets on TTL expiry or on missing routes, and forwarded valid packets via the correct interface—either directly to the destination network or to a specified next-hop router—by invoking the existing send_datagram() logic from PA1.
+
+Impact & Validation:
+
+Successfully passed all provided unit tests in the reference VM environment.
+
+Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
   
 
-- **Directory:** COMING SOON
+- **Directory:** [Project 3](Projects/A4)
 
 
 ## Future:
