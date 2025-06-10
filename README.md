@@ -4,7 +4,7 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 
 ## Projects
 
-### 1. Project 1: Langford Pairing Command Line Tool
+### Project 1: Langford Pairing Command Line Tool
 
 - **Description:** 
 Welcome to the Langford Pairing Command Line Tool! This tool allows you to work with Langford pairings, arranging numbers in a sequence with specific distances between identical pairs.
@@ -41,9 +41,9 @@ $ ./langford -c 9
 No pairing found for n=9.
 
 
-- **Directory:** [Project 1](Projects/A1)
+- **Directory:** [Project 1](Projects/P1)
 
-### 2. Project 2: Terminal GIS application
+### Project 2: Terminal GIS application
 
 - **Description:**
 Welcome to Simple Street Map (SSM), my terminal-based street map application! With SSM, you can navigate through simplified street maps in Toronto using a convenient command-line interface. I developed this project to enhance my skills in C programming, particularly focusing on structures, arrays, and dynamic memory allocation. I use the A star algorithm to find the quickest path between two points in the city.
@@ -97,9 +97,9 @@ Way 1: Queen's Park Crescent West
 >> quit
 
 
-- **Directory:** [Project 2](Projects/A2)
+- **Directory:** [Project 2](Projects/P2)
 
-### 3. Project 3: Custom Shell
+### Project 3: Custom Shell
 
 - **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
 
@@ -113,9 +113,9 @@ To run it, simply use the command ./cscshell -i ./cscshell_init
 and then start using it like you would your native shell!
 
 
-- **Directory:** [Project 3](Projects/A3)
+- **Directory:** [Project 3](Projects/P3)
 
-### 4. Project 4: Network Programming
+### Project 4: IPv4 Router
 
   **Description:** Routing Packets in a Simplified Software Router (C++)
 
@@ -137,7 +137,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
 
   
 
-- **Directory:** [Project 3](Projects/A4)
+- **Directory:** [Project 3](Projects/P4)
 
 
 ## Future:
