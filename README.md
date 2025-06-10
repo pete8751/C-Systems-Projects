@@ -137,7 +137,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
 
   
 
-- **Directory:** [Project 3](Projects/P4)
+- **Directory:** [Project 4](Projects/P4)
 
 
 ## Future:
