@@ -43,7 +43,7 @@ No pairing found for n=9.
 
 - **Directory:** [Project 1](Projects/A1)
 
-### 2. Project B: Terminal GIS application
+### 2. Project 2: Terminal GIS application
 
 - **Description:**
 Welcome to Simple Street Map (SSM), my terminal-based street map application! With SSM, you can navigate through simplified street maps in Toronto using a convenient command-line interface. I developed this project to enhance my skills in C programming, particularly focusing on structures, arrays, and dynamic memory allocation. I use the A star algorithm to find the quickest path between two points in the city.
@@ -99,7 +99,7 @@ Way 1: Queen's Park Crescent West
 
 - **Directory:** [Project 2](Projects/A2)
 
-### 3. Project C: Custom Shell
+### 3. Project 3: Custom Shell
 
 - **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
 
