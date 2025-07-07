@@ -8,7 +8,7 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 
   **Description:** Routing Packets in a Simplified Software Router (C++)
 
-Overview: Created a fully functioningsimplified IPv4 router.
+Overview: Created a fully functioning simplified IPv4 router.
 
 Key Features:
 
