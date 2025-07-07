@@ -1,47 +1,46 @@
-# My C Projects
+# My C/++ Projects
 
 Welcome to my GitHub repository showcasing three C projects that I've worked on. Below, you'll find descriptions of each project along with links to their respective directories.
 
 ## Projects
 
-### Project 1: Langford Pairing Command Line Tool
+### Project 4: IPv4 Router
 
-- **Description:** 
-Welcome to the Langford Pairing Command Line Tool! This tool allows you to work with Langford pairings, arranging numbers in a sequence with specific distances between identical pairs.
+  **Description:** Routing Packets in a Simplified Software Router (C++)
 
-A Langford pairing arranges numbers such that each identical pair has a distance equal to its value.
+Overview: Created a fully functioning a fully functional, simplified IPv4 router.
 
-The tool has two modes:
+Key Features:
 
-Check Mode: Verify if a sequence is a valid Langford pairing.
-Create Mode: Generate a Langford pairing.
+Dynamic Route Installation: Implemented Router::add_route() to insert new routing entries (prefix, mask length, optional next-hop, and output interface) into a custom routing table.
 
-Example Usage:
+Longest-Prefix Matching: In Router::route(), iterated incoming packets across all interfaces, performed a binary search over stored prefixes to find the best (longest) matching route for each destination IP.
 
-### Check Mode:
-Check a sequence as a Langford pairing:
+TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropped packets on TTL expiry or on missing routes, and forwarded valid packets via the correct interface—either directly to the destination network or to a specified next-hop router—by invoking the existing send_datagram() logic from PA1.
 
-$ ./langford 2 10 1 2 1 9 12 14 11 7 15 16 10 13 3 9 6 7 3 12 11 8 14 6 4 5 15 13 16 4 8 5
+Impact & Validation:
 
-It's a Langford pairing!
+Successfully passed all provided unit tests in the reference VM environment.
 
-$ ./langford 8 4 1 2 6 11 9 6 5 9 5 11 7 3 8 10 4 3 1 7 10 2
+Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
-Not a Langford pairing.
+  
 
-### Create Mode:
-Generate a Langford pairing for n:
+- **Directory:** [Project 4](Projects/P4)
 
-$ ./langford -c 16
+### Project 3: Custom Shell
 
-Langford pairing for n=16: [2, 10, 1, 2, 1, 9, 12, 14, 11, 7, 15, 16, 10, 13, 3, 9, 6, 7, 3, 12, 11, 8, 14, 6, 4, 5, 15, 13, 16, 4, 8, 5]
+- **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
 
-$ ./langford -c 9
+The shell can execute executables with appropriate permissions found in directories listed in the $PATH variable, as well as those with absolute or relative paths (e.g., ./hello). Command line arguments can also be supplied to these programs. The shell is interactive and can be mildly scriptable. When in interactive mode, typing into the terminal program provides input to the stdin of other running executables, displaying the output of stdout and stderr.
 
-No pairing found for n=9.
+The shell supports file redirection, piping, and reading commands from a script file, providing flexibility beyond interactive usage. While it can't exhaustively support all programs installed on teach.cs due to maintenance and bug-fixing constraints, it can utilize basic system programs like cd (as a special case), ls, mkdir, rm, grep, touch, man, cat, wc, and any programs developed for the course.
 
+This involved a lot of C-string parsing, file I/O, and standard usage of fork, exec, wait, pipe, and dup, to ensure that all commands run in parallel.
 
-- **Directory:** [Project 1](Projects/P1)
+To run it, simply use the command ./cscshell -i ./cscshell_init
+and then start using it like you would your native shell!
+
 
 ### Project 2: Terminal GIS application
 
@@ -96,51 +95,47 @@ Way 1: Queen's Park Crescent West
 ### 'quit' command
 >> quit
 
-
 - **Directory:** [Project 2](Projects/P2)
-
-### Project 3: Custom Shell
-
-- **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
-
-The shell can execute executables with appropriate permissions found in directories listed in the $PATH variable, as well as those with absolute or relative paths (e.g., ./hello). Command line arguments can also be supplied to these programs. The shell is interactive and can be mildly scriptable. When in interactive mode, typing into the terminal program provides input to the stdin of other running executables, displaying the output of stdout and stderr.
-
-The shell supports file redirection, piping, and reading commands from a script file, providing flexibility beyond interactive usage. While it can't exhaustively support all programs installed on teach.cs due to maintenance and bug-fixing constraints, it can utilize basic system programs like cd (as a special case), ls, mkdir, rm, grep, touch, man, cat, wc, and any programs developed for the course.
-
-This involved a lot of C-string parsing, file I/O, and standard usage of fork, exec, wait, pipe, and dup, to ensure that all commands run in parallel.
-
-To run it, simply use the command ./cscshell -i ./cscshell_init
-and then start using it like you would your native shell!
-
 
 - **Directory:** [Project 3](Projects/P3)
 
-### Project 4: IPv4 Router
+### Project 1: Langford Pairing Command Line Tool
 
-  **Description:** Routing Packets in a Simplified Software Router (C++)
+- **Description:** 
+Welcome to the Langford Pairing Command Line Tool! This tool allows you to work with Langford pairings, arranging numbers in a sequence with specific distances between identical pairs.
 
-Overview: Created a fully functioning a fully functional, simplified IPv4 router.
+A Langford pairing arranges numbers such that each identical pair has a distance equal to its value.
 
-Key Features:
+The tool has two modes:
 
-Dynamic Route Installation: Implemented Router::add_route() to insert new routing entries (prefix, mask length, optional next-hop, and output interface) into a custom routing table.
+Check Mode: Verify if a sequence is a valid Langford pairing.
+Create Mode: Generate a Langford pairing.
 
-Longest-Prefix Matching: In Router::route(), iterated incoming packets across all interfaces, performed a binary search over stored prefixes to find the best (longest) matching route for each destination IP.
+Example Usage:
 
-TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropped packets on TTL expiry or on missing routes, and forwarded valid packets via the correct interface—either directly to the destination network or to a specified next-hop router—by invoking the existing send_datagram() logic from PA1.
+### Check Mode:
+Check a sequence as a Langford pairing:
 
-Impact & Validation:
+$ ./langford 2 10 1 2 1 9 12 14 11 7 15 16 10 13 3 9 6 7 3 12 11 8 14 6 4 5 15 13 16 4 8 5
 
-Successfully passed all provided unit tests in the reference VM environment.
+It's a Langford pairing!
 
-Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
+$ ./langford 8 4 1 2 6 11 9 6 5 9 5 11 7 3 8 10 4 3 1 7 10 2
 
-  
+Not a Langford pairing.
 
-- **Directory:** [Project 4](Projects/P4)
+### Create Mode:
+Generate a Langford pairing for n:
+
+$ ./langford -c 16
+
+Langford pairing for n=16: [2, 10, 1, 2, 1, 9, 12, 14, 11, 7, 15, 16, 10, 13, 3, 9, 6, 7, 3, 12, 11, 8, 14, 6, 4, 5, 15, 13, 16, 4, 8, 5]
+
+$ ./langford -c 9
+
+No pairing found for n=9.
 
 
-## Future:
+- **Directory:** [Project 1](Projects/P1)
 
-A4 is soon to come, and I'm currently working on optimizing A3 
 
