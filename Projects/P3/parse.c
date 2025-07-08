@@ -1,61 +1,8 @@
-/*****************************************************************************/
-/*                           CSC209-24s A3 CSCSHELL                          */
-/*       Copyright 2024 -- Demetres Kostas PhD (aka Darlene Heliokinde)      */
-/*****************************************************************************/
-
 #include "cscshell.h"
 
 #define CONTINUE_SEARCH NULL
 
-//TESTING CHATGPT
-//int main() {
-//    char input[] = "PATH=/local/bin:/usr/bin:/bin/";
-//    fprintf(stdout, "debugging");
-//
-//    // Assuming 'parse_line' is the function to be tested
-//    Variable *variable = NULL;
-////    Variable *variable = malloc(sizeof(Variable));
-////    variable->name = malloc(sizeof(char) * 20);
-////    variable->value = malloc(sizeof(char) * 20);
-////    strcpy(variable->name, "arg4");
-////    strcpy(variable->value, "penelope");
-////    variable->next = NULL;
-////    free_variable(variable, true);
-//    Command *result = parse_line(input, &variable);
-////    char *resec = resolve_executable("stty", variable);
-//    char next_input[] = "cat < input.txt >> out.txt";
-//    result = parse_line(next_input, &variable);
-//    int *exit_code = execute_line(result);
-//    free(variable->name);
-//    free(variable->value);
-//    free(variable);
-//
-//    // Output the result (assuming Command structure has been defined)
-//    if (result == (Command *) -1){return 0;}
-//    if (result != NULL) {
-//        // Iterate through the command list and print each command
-//        Command *curr = result;
-//        while (curr != NULL) {
-//            printf("Executable Path: %s\n", curr->exec_path);
-//            printf("Arguments:\n");
-//            for (int i = 0; curr->args[i] != NULL; i++) {
-//                printf("  %s\n", curr->args[i]);
-//            }
-//            printf("Input Redirection: %s\n", curr->redir_in_path ? curr->redir_in_path : "None");
-//            printf("Output Redirection: %s\n", curr->redir_out_path ? curr->redir_out_path : "None");
-//            printf("Redirection Append: %s\n", curr->redir_append ? "Yes" : "No");
-//            printf("\n");
-//            curr = curr->next;
-//        }
-//    } else {
-//        printf("No commands parsed.\n");
-//    }
-//
-//    // Free any allocated memory here (if necessary)
-//    return 0;
-//}
 
-// COMPLETE
 char *resolve_executable(const char *command_name, Variable *path){
 
     if (command_name == NULL || path == NULL){

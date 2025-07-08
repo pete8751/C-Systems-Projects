@@ -1,35 +1,6 @@
-/*****************************************************************************/
-/*                           CSC209-24s A3 CSCSHELL                          */
-/*       Copyright 2024 -- Demetres Kostas PhD (aka Darlene Heliokinde)      */
-/*****************************************************************************/
-
 #include "cscshell.h"
 
-//TESTING CHATGPT
-//int main() {
-//    char input[] = "PATH=/local/bin:/usr/bin:/bin/";
-//    fprintf(stdout, "debugging");
-//
-//    // Assuming 'parse_line' is the function to be tested
-//    Variable *variable = NULL;
-////    Variable *variable = malloc(sizeof(Variable));
-////    variable->name = malloc(sizeof(char) * 20);
-////    variable->value = malloc(sizeof(char) * 20);
-////    strcpy(variable->name, "arg4");
-////    strcpy(variable->value, "penelope");
-////    variable->next = NULL;
-//    Command *result = parse_line(input, &variable);
-////    char *resec = resolve_executable("stty", variable);
-//    char next_input[] = "ls 2 4";
-//    result = parse_line(next_input, &variable);
-//    int *exit_code = execute_line(result);
-//    if (exit_code != (int *) -1){free(exit_code);}
-//    int fire = 7;
-//    return fire;
-//}
 
-
-// COMPLETE
 int cd_cscshell(const char *target_dir){
     if (target_dir == NULL) {
         char user_buff[MAX_USER_BUF];
@@ -63,59 +34,6 @@ int linked_list_len(Command *head)
     }
     return i;
 }
-
-//void kill_processes(int *pid_list, int len)
-//{
-//    for (int i = 0; i < len; i++)
-//    {
-//        if (pid_list[i] == -1)
-//        {
-//            return;
-//        }
-//
-//        if (kill(pid, SIGTERM) == 0)
-//        {
-//            return;
-//        }
-//
-//        perror("kill process : %d failed", pid_list[i]);
-//        system(EXIT_FAILURE);
-//    }
-//}
-//
-//int await_processes(int num_processes)
-//{
-//    int i = 0;
-//    int exit_code;
-//    while(i < num_processes)
-//    {
-//        int exit_val;
-//        int pid = waitpid(-1, &exit_val, WNOHANG);
-//        if (pid == -1)
-//        {
-//            perror("waitpid error");
-//            exit(EXIT_FAILURE); //TODO: HOW TO HANDLE?
-//        }
-//
-//        if (pid == 0) //process hasn't returned yet.
-//        {
-//            continue;
-//        }
-//
-//        if (WIFEXITED(exit_val))
-//        {
-//            i++;
-//            int exit_code = WEXITSTATUS(exit_val);
-//        }
-//        if (WIFSIGNALED(exit_val))
-//        {
-//            return -1; //TODO: HOW TO HANDLE?
-//
-//        }
-//        //if code reaches here then abnormal termination (error).
-//    }
-//    return exit_code;
-//}
 
 int await_processes(int *pids, int num_processes)
 {
