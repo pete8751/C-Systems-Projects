@@ -10,7 +10,7 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 * **[P3 – Custom Shell](#p3--custom-shell)**
 * **[P2 – Terminal GIS App](#p2--terminal-gis-app)**
 * **[P1 – Puzzle Solvers](#p1--puzzle-solvers)**<br>
-  <sub>(CUDA solvers temporarily removed due to research restrictions; enjoy the first puzzle implemented in plain C!)</sub>
+  <sub>(CUDA solvers temporarily removed due to research restrictions; enjoy the first puzzle I ever implemented in plain C!)</sub>
 
 ## Projects
 
