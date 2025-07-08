@@ -1,0 +1,8 @@
+fcfs.o: fcfs.c ut369.h queue.h thread.h schedule.h
+interrupt.o: interrupt.c ut369.h interrupt.h
+prio.o: prio.c ut369.h queue.h thread.h schedule.h
+queue.o: queue.c thread.h ut369.h queue.h
+rand.o: rand.c ut369.h thread.h schedule.h
+schedule.o: schedule.c ut369.h thread.h interrupt.h schedule.h
+thread.o: thread.c ut369.h queue.h thread.h schedule.h interrupt.h
+ut369.o: ut369.c ut369.h interrupt.h thread.h schedule.h
