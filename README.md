@@ -2,6 +2,19 @@
 
 Welcome to my GitHub repository showcasing three C projects that I've worked on. Below, you'll find descriptions of each project along with links to their respective directories.
 
+Contents:
+<details>
+<summary>Contents Table</summary>
+
+* [P6 - IPv4 Router](#p6---ipv4-router)  
+* [P5 - Event-Based Server](#p5---event-based-server)  
+* [P4 - Multithreading Library](#p4---multithreading-library)  
+* [P3 - Custom Shell](#p3---custom-operational-shell)  
+* [P2 - Terminal GIS App](#p2---terminal-gis-application)  
+* [P1 - Puzzle Solvers](#p1---puzzle-solvers)  (Note I've removed some of my CUDA solvers due to research conflicts) - For now, enjoy the first puzzle I implemented in C!
+
+</details>
+
 ## Projects
 
 ### Project 4: IPv4 Router
