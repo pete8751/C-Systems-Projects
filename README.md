@@ -39,8 +39,8 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
 ### Project 5 — Event-Based Music Library Server
 
 - **Description:**  
-  A non-blocking, epoll-driven **audio-streaming server**.  
-  * Handles **thousands of concurrent TCP clients** on a single thread using edge-triggered `epoll` (Linux) / `kqueue` (macOS).  
+  A non-blocking, poll-driven **audio-streaming server**.  
+  * Handles **thousands of concurrent TCP clients** on a single thread.  
   * Clients browse a music library, request tracks, and receive **streamed `.wav` / `.mp3` data** in realtime.  
   * Zero-copy send (`sendfile` where available) plus fixed-size buffers keep latency low.  
   * Graceful connection time-outs and back-pressure handling—no client can starve the event loop.
