@@ -40,7 +40,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
 
 - **Description:**  
   A non-blocking, poll-driven **audio-streaming server**.  
-  * Handles **thousands of concurrent TCP clients** on a single thread.  
+  * Handles **hundreds of concurrent TCP clients** on a single thread.  
   * Clients browse a music library, request tracks, and receive **streamed `.wav` / `.mp3` data** in realtime.  
   * Zero-copy send (`sendfile` where available) plus fixed-size buffers keep latency low.  
   * Graceful connection time-outs and back-pressure handling—no client can starve the event loop.
