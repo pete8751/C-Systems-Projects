@@ -14,7 +14,7 @@ Welcome to my GitHub repository showcasing three C projects that I've worked on.
 
 ## Projects
 
-### Project 4: IPv4 Router
+### Project 6: IPv4 Router
 
   **Description:** Routing Packets in a Simplified Software Router (C++)
 
@@ -34,7 +34,45 @@ Successfully passed all provided unit tests in the reference VM environment.
 
 Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
+- **Directory:** [Project 6](Projects/P6)
+
+### Project 5 — Event-Based Music Library Server
+
+- **Description:**  
+  A non-blocking, epoll-driven **audio-streaming server**.  
+  * Handles **thousands of concurrent TCP clients** on a single thread using edge-triggered `epoll` (Linux) / `kqueue` (macOS).  
+  * Clients browse a music library, request tracks, and receive **streamed `.wav` / `.mp3` data** in realtime.  
+  * Zero-copy send (`sendfile` where available) plus fixed-size buffers keep latency low.  
+  * Graceful connection time-outs and back-pressure handling—no client can starve the event loop.
+
+  **Quick start**
+
+  ```bash
+  cd Projects/P6
+  make                     # builds server and CLI test client
+  ./musicd ./music_folder  # serve all audio files in ./music_folder
   
+- **Directory:** [Project 5](Projects/P5)
+
+### Project 4 — Multithreading Library
+
+- **Description:**  
+  User-level threading package with a minimal `pthread`-like API.
+
+  * **Scheduling modes**
+    * *Pre-emptive* – time-sliced round-robin via `setitimer` + `SIGALRM`.
+    * *Co-operative* – threads run until they call `thread_yield()`.
+
+  * **Sync primitives**  
+    Lightweight mutexes and a basic condition variable, usable in either mode.
+
+  * **API surface**  
+    `thread_create`, `thread_join`, `thread_yield`, `mutex_lock / unlock`.
+
+  Build with  
+  ```bash
+  make MODE=preemptive     # or MODE=cooperative
+  ./demo                   # shows context-switching and locking
 
 - **Directory:** [Project 4](Projects/P4)
 
@@ -51,6 +89,7 @@ This involved a lot of C-string parsing, file I/O, and standard usage of fork, e
 To run it, simply use the command ./cscshell -i ./cscshell_init
 and then start using it like you would your native shell!
 
+- **Directory:** [Project 3](Projects/P3)
 
 ### Project 2: Terminal GIS application
 
@@ -106,8 +145,6 @@ Way 1: Queen's Park Crescent West
 >> quit
 
 - **Directory:** [Project 2](Projects/P2)
-
-- **Directory:** [Project 3](Projects/P3)
 
 ### Project 1: Langford Pairing Command Line Tool
 
