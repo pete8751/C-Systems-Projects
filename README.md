@@ -1,6 +1,6 @@
 # My C/++ Projects
 
-Welcome to my GitHub repository showcasing three C projects that I've worked on. Below, you'll find descriptions of each project along with links to their respective directories.
+Welcome to my GitHub repository showcasing a library of C projects that I've worked on. Below, you'll find descriptions of each project along with links to their respective directories.
 
 ## 📑 Contents
 
