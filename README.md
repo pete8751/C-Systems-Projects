@@ -52,7 +52,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
   make                     # builds server and CLI test client
   ./musicd ./music_folder  # serve all audio files in ./music_folder
   
-- **Directory:** [Project 5](Projects/P5%-%Event-Based%Server)
+- **Directory:** [Project 5](https://github.com/pete8751/Cprojects/tree/master/Projects/P5%20-%20Event-Based%20Network)
 
 ### Project 4 — Multithreading Library
 
@@ -74,7 +74,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
   make MODE=preemptive     # or MODE=cooperative
   ./demo                   # shows context-switching and locking
 
-- **Directory:** [Project 4](Projects/P4)
+- **Directory:** [Project 4](https://github.com/pete8751/Cprojects/tree/master/Projects/P4%20-%20Multithreading%20Library)
 
 ### Project 3: Custom Shell
 
@@ -89,7 +89,7 @@ This involved a lot of C-string parsing, file I/O, and standard usage of fork, e
 To run it, simply use the command ./cscshell -i ./cscshell_init
 and then start using it like you would your native shell!
 
-- **Directory:** [Project 3](Projects/P3)
+- **Directory:** [Project 3](https://github.com/pete8751/Cprojects/tree/master/Projects/P3%20-%20Custom%20Shell)
 
 ### Project 2: Terminal GIS application
 
@@ -144,7 +144,7 @@ Way 1: Queen's Park Crescent West
 ### 'quit' command
 >> quit
 
-- **Directory:** [Project 2](Projects/P2)
+- **Directory:** [Project 2](https://github.com/pete8751/Cprojects/tree/master/Projects/P2%20-%20GIS)
 
 ### Project 1: Langford Pairing Command Line Tool
 
@@ -183,6 +183,6 @@ $ ./langford -c 9
 No pairing found for n=9.
 
 
-- **Directory:** [Project 1](Projects/P1)
+- **Directory:** [Project 1](https://github.com/pete8751/Cprojects/tree/master/Projects/P1%20-%20Langford%20Pairing%20Solver)
 
 
