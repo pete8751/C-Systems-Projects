@@ -34,7 +34,7 @@ Successfully passed all provided unit tests in the reference VM environment.
 
 Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
-- **Directory:** [Project 6](Projects/P6 IPv4 Router)
+- **Directory:** [Project 6](Projects/P6%20IPv4%20Router)
 
 ### Project 5 — Event-Based Music Library Server
 
@@ -52,7 +52,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
   make                     # builds server and CLI test client
   ./musicd ./music_folder  # serve all audio files in ./music_folder
   
-- **Directory:** [Project 5](Projects/P5)
+- **Directory:** [Project 5](Projects/P5%Event-Based%Server)
 
 ### Project 4 — Multithreading Library
 
