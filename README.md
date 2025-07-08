@@ -34,7 +34,7 @@ Successfully passed all provided unit tests in the reference VM environment.
 
 Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
-- **Directory:** [Project 6](Projects/P6%-%20IPv4%20Router)
+- **Directory:** [Project 6](Projects/P6%20-%20IPv4%20Router)
 
 ### Project 5 — Event-Based Music Library Server
 
