@@ -26,7 +26,7 @@ Dynamic Route Installation: Implemented Router::add_route() to insert new routin
 
 Longest-Prefix Matching: In Router::route(), iterated incoming packets across all interfaces, performed a binary search over stored prefixes to find the best (longest) matching route for each destination IP.
 
-TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropped packets on TTL expiry or on missing routes, and forwarded valid packets via the correct interface—either directly to the destination network or to a specified next-hop router—by invoking the existing send_datagram() logic from PA1.
+TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropped packets on TTL expiry or on missing routes, and forwarded valid packets via the correct interface—either directly to the destination network or to a specified next-hop router.
 
 Impact & Validation:
 
@@ -78,7 +78,7 @@ Demonstrated robust handling of route updates, overlapping prefixes, and edge ca
 
 ### Project 3: Custom Shell
 
-- **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell. The shell also supports man pages and vi, at least on my own machine.
+- **Description:** For this project, I implemented a basic shell capable of performing many of the operations of the native shell.
 
 The shell can execute executables with appropriate permissions found in directories listed in the $PATH variable, as well as those with absolute or relative paths (e.g., ./hello). Command line arguments can also be supplied to these programs. The shell is interactive and can be mildly scriptable. When in interactive mode, typing into the terminal program provides input to the stdin of other running executables, displaying the output of stdout and stderr.
 
