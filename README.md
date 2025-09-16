@@ -30,8 +30,6 @@ TTL Handling & Packet Forwarding: Decremented the IP header’s TTL field, dropp
 
 Impact & Validation:
 
-Successfully passed all provided unit tests in the reference VM environment.
-
 Demonstrated robust handling of route updates, overlapping prefixes, and edge cases (e.g. default (“0.0.0.0/0”) route).
 
 - **Directory:** [Project 6](https://github.com/pete8751/Cprojects/tree/master/Projects/P6%20-%20IPv4%20Network)
